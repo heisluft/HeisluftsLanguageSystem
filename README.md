@@ -2,6 +2,50 @@
 A Bukkit plugin API designed to make sending localized messages as easy as possible.
 
 ## Usage:
+Add HeisluftsLanguageSystem via
+- a downloaded jar from [My Website](http://heisluft.bplaced.net/downloads.php)
+- maven: 
+```xml
+<!--Your Stuff...-->
+<repositories>
+  <!--Your Stuff...-->
+  <repository>
+    <id>heisluft-repo</id>
+    <url>http://heisluft.bplaced.net/maven/</url>
+  </repository>
+  <!--Your Stuff...-->
+</repositories>
+<!--Your Stuff...-->
+<dependencies>
+  <!--Your Stuff...-->
+  <dependency>
+    <groupId>de.heisluft</groupId>
+    <artifactId>HeisluftsLanguageSystem</artifactId>
+    <version>1.0.0</version>
+    <scope>compile</scope>
+  </dependency>
+  <!--Your Stuff...-->
+</dependencies>
+<!--Your Stuff...-->
+````
+- gradle:
+```gradle
+// Your Stuff...
+repositories {
+  // Your Stuff...
+  maven {
+    url 'http://heisluft.bplaced.net/maven/'
+  }
+  // Your Stuff...
+}
+// Your Stuff...
+dependencies {
+  // Your Stuff...
+  compile group: 'de.heisluft", name: "HeisluftsLanguageSystem", version: "1.0.0'
+  // Your Stuff...
+}
+// Your Stuff...
+```
 
 To use HeisluftsLanguageSystem, register your plugin like this:
 ```java
