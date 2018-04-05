@@ -1,0 +1,6 @@
+name: ${name}
+prefix: ${name}
+author: heisluft
+version: ${version}
+main: de.heisluft.lang.HeisluftsLanguageSystem
+softdepend: [ProtocolLib]
