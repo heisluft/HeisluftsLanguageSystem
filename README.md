@@ -2,7 +2,7 @@
 A Bukkit plugin API designed to make sending localized messages as easy as possible.
 
 ## Usage:
-Add HeisluftsLanguageSystem via
+### Add HeisluftsLanguageSystem via
 - a downloaded jar from [My Website](http://heisluft.bplaced.net/downloads.php)
 - maven: 
 ```xml
@@ -47,7 +47,7 @@ dependencies {
 // Your Stuff...
 ```
 
-To use HeisluftsLanguageSystem, register your plugin like this:
+### To use HeisluftsLanguageSystem, register your plugin like this:
 ```java
 public class MyPlugin extends JavaPlugin {
 	@Override
@@ -58,7 +58,7 @@ public class MyPlugin extends JavaPlugin {
 	}
 }
 ```
-Then, send a localized message like so:
+### Then, send a localized message like so:
 ```java	
 public void exampleMessage(Player player) {
 	int someArg = 2;
@@ -67,11 +67,11 @@ public void exampleMessage(Player player) {
 ```
 Given that you have put a file named en_us.lang in your folder containing the following:
 ```text
-some.unlocalized.text=Some Unlocalized text with arg %1, sent to %2 having a score of %3
+some.unlocalized.text=Some localized text with arg %1, sent to %2 having a score of %3
 ```
 and the Player is named "SuperCrafter2000"
-the player will be sent this message:
-Unlocalized text with arg MyArg, sent to SuperCrafter2000 having a score of 2
+the player will be sent this message:<br>
+Some localized text with arg MyArg, sent to SuperCrafter2000 having a score of 2
 
 ## Limitations:
 heislufts Language System uses the packets sent from the client to the server. However, these are sent <b>AFTER</b>
