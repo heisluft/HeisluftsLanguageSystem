@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class LanguageManager {
+public final class LanguageManager {
 
 	public static final LanguageManager INSTANCE = new LanguageManager();
 
@@ -43,7 +43,6 @@ public class LanguageManager {
 	}
 	
 	public String translate(String unlocalized, Player translatedTo, Object... args) {
-		if(getLanguageForPlayer(translatedTo) == null) System.out.println("lol");
 		return translate(unlocalized, getLanguageForPlayer(translatedTo), args);
 	}
 	

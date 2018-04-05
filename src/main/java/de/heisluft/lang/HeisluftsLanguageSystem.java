@@ -9,7 +9,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class HeisluftsLanguageSystem extends JavaPlugin {
+public final class HeisluftsLanguageSystem extends JavaPlugin {
 
 
 	private static HeisluftsLanguageSystem instance;

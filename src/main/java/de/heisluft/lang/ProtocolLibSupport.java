@@ -17,7 +17,7 @@ import java.util.Locale;
  *
  * @author heisluft
  */
-public class ProtocolLibSupport implements PacketListener {
+public final class ProtocolLibSupport implements PacketListener {
 
 	/**
 	 * Initializes ProtocolLib support
