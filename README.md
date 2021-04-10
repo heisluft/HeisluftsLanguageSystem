@@ -1,9 +1,9 @@
-# Heislufts Language System
+# (Abandoned) Heislufts Language System
 A Bukkit plugin API designed to make sending localized messages as easy as possible.
 
 ## Usage:
 ### Add HeisluftsLanguageSystem via
-- a downloaded jar from [My Website](http://heisluft.bplaced.net/downloads.php)
+- a downloaded jar from [My Website](https://heisluft.de/downloads.php)
 - maven: 
 ```xml
 <!--Your Stuff...-->
@@ -11,7 +11,7 @@ A Bukkit plugin API designed to make sending localized messages as easy as possi
   <!--Your Stuff...-->
   <repository>
     <id>heisluft-repo</id>
-    <url>http://heisluft.bplaced.net/maven/</url>
+    <url>https://heisluft.de/maven/</url>
   </repository>
   <!--Your Stuff...-->
 </repositories>
@@ -34,7 +34,7 @@ A Bukkit plugin API designed to make sending localized messages as easy as possi
 repositories {
   // Your Stuff...
   maven {
-    url 'http://heisluft.bplaced.net/maven/'
+    url 'https://heisluft.de/maven/'
   }
   // Your Stuff...
 }
@@ -65,7 +65,7 @@ public void exampleMessage(Player player) {
 	LanguageManager.INSTANCE.translate("some.unloaclized.text", player, "MyArg", player.getName(), someArg);
 }
 ```
-Given that you have put a file named en_us.lang in your folder containing the following:
+Suppose that you have put a file named en_us.lang in your folder containing the following:
 ```text
 some.unlocalized.text=Some localized text with arg %1, sent to %2 having a score of %3
 ```
